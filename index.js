@@ -1,4 +1,4 @@
-var app = require('express')();
+﻿var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
@@ -39,7 +39,7 @@ io.on('connection', function(socket){
         }
     });
 });
-//监听在3000端口
-http.listen(3000, function(){
+//监听在5050端口
+http.listen(5050, function(){
     console.log('listening on:3000');
 });
